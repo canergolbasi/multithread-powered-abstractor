@@ -12,10 +12,8 @@
 
 //running
 // g++ abstracgtor.cpp -abstractor.out -lpthread
-//    ./abstractor.out /home/ubuntu/Masaüstü/src/input_1.txt /home/ubuntu/Masaüstü/src/output_1.txt
+// ./abstractor.out /home/ubuntu/Masaüstü/src/input_1.txt /home/ubuntu/Masaüstü/src/output_1.txt
 using namespace std;
-
-
 
 vector<string> letters={"A", "B", "C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"};  //DEVAMINI TAMAMLA
 int t,a,n;
@@ -30,11 +28,6 @@ vector<string> abstractfiles;
 queue<string> qabstracts;
 
 set<string> querywords;
-
-
-
-
-
 
 struct arg_struct{
     string letter;  // use this struct for sending some information to thread
@@ -84,9 +77,6 @@ for(int j=qwords.size()-a;j<qwords.size();j++){
 }
 
     qwords.erase(qwords.end()-a , qwords.end());
-
-
-
 
 }
 
@@ -218,8 +208,6 @@ void *abstract(void *arguments){
 
                 }
             }
-
-
 
         }
 
